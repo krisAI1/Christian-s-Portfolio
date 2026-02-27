@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian Garcia | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: rgba(15,23,42,0.9);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+}
+
+h1 { margin: 10px 0; }
+
+.btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.tool img {
+  width: 50px;
+  transition: 0.3s;
+}
+
+.tool:hover img {
+  transform: scale(1.2);
+}
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div><strong>Christian Garcia</strong></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#tools">Tools</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <img src="new-pic.jpg" class="avatar" alt="Christian Garcia">
+  <h1>Christian B. Garcia</h1>
+  <p>Ecommerce & Customer Support Specialist</p>
+
+  <a href="Christian_Garcia_CV.pdf" class="btn" download>Download CV</a>
+  <a href="mailto:krisgarci023@gmail.com" class="btn secondary">Email Me</a>
+  <a href="https://www.linkedin.com/in/christian-garcia-2ab030240/" target="_blank" class="btn secondary">LinkedIn</a>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I’m an Ecommerce and Customer Support Specialist with 8+ years of experience handling high-volume operations, order management, and logistics coordination.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Core Skills</h2>
+  <div class="card">
+    <ul>
+      <li>Ecommerce Support</li>
+      <li>Order Fulfillment</li>
+      <li>Logistics Coordination</li>
+      <li>Refunds & Returns</li>
+      <li>Technical Support</li>
+    </ul>
+  </div>
+</section>
+
+<section id="tools">
+  <h2>Tools</h2>
+  <div class="card">
+    <div class="tools-grid">
+      <div class="tool"><img src="https://cdn.simpleicons.org/shopify" alt="Shopify"><p>Shopify</p></div>
+      <div class="tool"><img src="https://cdn.simpleicons.org/gorgias" alt="Gorgias"><p>Gorgias</p></div>
+      <div class="tool"><img src="https://cdn.simpleicons.org/flexport" alt="Flexport"><p>Flexport</p></div>
+      <div class="tool"><img src="https://cdn.simpleicons.org/slack" alt="Slack"><p>Slack</p></div>
+      <div class="tool"><img src="https://cdn.simpleicons.org/notion" alt="Notion"><p>Notion</p></div>
+      <div class="tool"><img src="https://cdn.simpleicons.org/google" alt="Google"><p>Google</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Ecommerce Support Contractor</h3>
+    <p>Handled customer support, orders, and logistics coordination.</p>
+  </div>
+
+  <div class="card">
+    <h3>Logistics Dispatcher</h3>
+    <p>Managed dispatch operations and delivery coordination.</p>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Hire Me</h2>
+  <div class="card contact">
+    <p>I’m available for Ecommerce Support, Customer Service, and Virtual Assistant roles.</p>
+    <a href="mailto:krisgarci023@gmail.com" class="btn">Contact Me</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Christian Garcia</p>
+</footer>
+
+</body>
+</html>
